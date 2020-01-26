@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <title>Voting</title>	
+	</head>
+	<body class='jumbotron'>
+		<div class="flex-container pt-4">
+			<div class="container">
+				<h1>
+					Vote for Qinghua! 
+				</h1>
+				<p class="lead">
+					Enter your email to vote. So far, <span class='badge '><%= total %></span> people voted for her!
+				</p>
+				<form action='/register' method='POST'>
+					<input class='form' type='text' placeholder='enter your email' name='email'>
+					<button>
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+
+
+
